@@ -21,19 +21,19 @@
 
           <ul class="nav__links">
             <li>
-              <a class="nav__link">Events</a>
+              <a class="nav__link" href="#events">Events</a>
             </li>
             <li>
-              <a class="nav__link">Staff picks</a>
+              <a class="nav__link" href="#staff">Staff picks</a>
             </li>
             <li>
-              <a class="nav__link">Become a member</a>
+              <a class="nav__link" href="#membership">Become a member</a>
             </li>
             <li>
-              <a class="nav__link">About</a>
+              <a class="nav__link" href="#about">About</a>
             </li>
             <li>
-              <a class="nav__link">Contacts</a>
+              <a class="nav__link" href="#footer">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -43,16 +43,13 @@
           your development knowledge, or just use this lovely spot to work or
           study. This is a cool place for cool students!
         </p>
-        <!-- ----------------------------------------------------------------- -->
-        <!--               Don't uncomment until project stage 2               -->
-        <!-- ----------------------------------------------------------------- -->
         <img
           src="./images/inside_the_library.png"
           alt="Illustration 'Inside the library'"
           class="header__image"
         />
         <div class="header__footer">
-          <a class="header__link">About the library &darr;</a>
+          <a class="header__link" href="#about ">About the library &darr;</a>
           <p class="header__address">
             200 Success Avenue, The Town of Triple Peaks
           </p>
@@ -60,7 +57,7 @@
       </header>
 
       <main class="content">
-        <section class="events">
+        <section class="events" id="events">
           <div class="events__content">
             <h2 class="events__heading">Upcoming events:</h2>
             <h3 class="events__title">
@@ -122,13 +119,10 @@
           </div>
         </section>
 
-        <section class="staff">
-          <!-- --------------------------------------------------------------- -->
-          <!--        Don't uncomment until the final project stage            -->
-          <!-- --------------------------------------------------------------- -->
-          <!--<h2 class="staff__title">Staff picks</h2>
+        <section class="staff" id="staff">
+          <h2 class="staff__title">Staff picks</h2>
           <p class="staff__subtitle">That our readers love</p>
-          <ul>
+          <ul class="staff__card">
             <li class="card">
               <div class="card__content">
                 <h3 class="card__title">Introduction to Algorithms</h3>
@@ -194,14 +188,11 @@
                 <p class="card__footer">Steve McConnell</p>
               </div>
             </li>
-          </ul>-->
+          </ul>
         </section>
 
-        <section class="membership">
-          <!-- --------------------------------------------------------------- -->
-          <!--         Don't uncomment until the final project stage           -->
-          <!-- --------------------------------------------------------------- -->
-          <!--<h2 class="membership__title">Becoming a library member is easy!</h2>
+        <section class="membership" id="membership">
+          <h2 class="membership__title">Becoming a library member is easy!</h2>
           <ul class="membership__steps">
             <li class="step">
               <h3 class="step__title">
@@ -253,14 +244,11 @@
                 Enjoy all the awesome benefits of membership!
               </p>
             </li>
-          </ul>-->
+          </ul>
         </section>
 
-        <section class="about">
-          <!-- --------------------------------------------------------------- -->
-          <!--          Don't uncomment until the final project stage          -->
-          <!-- --------------------------------------------------------------- -->
-          <!--<h2 class="about__title">About the library</h2>
+        <section class="about" id="about">
+          <h2 class="about__title">About the library</h2>
           <div class="about__content">
             <p class="about__paragraph">
               Libraries are essential establishments in practically every city,
@@ -280,15 +268,57 @@
               in computer programming would love!
             </p>
           </div>
-          <div class="about__circle"></div> -->
+          <div class="about__circle"></div>
         </section>
       </main>
-      <footer class="footer">
-        <!-- ----------------------------------------------------------------- -->
-        <!--          Don't uncomment until the final project stage            -->
-        <!-- ----------------------------------------------------------------- -->
+
+      <footer class="footer" id="footer">
+        <div class="footer__columns">
+          <div class = "footer__column">
+            <img
+            src="./images/logo_white.svg"
+            alt="Triple Peaks Library Logo"
+            class="footer-logo"
+            />
+          </div>
+
+          <div class="footer__column">
+            <div class = "footer__column_content_hours">
+              <h4 class="footer__column-heading">Hours</h4>
+
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  Weekdays: 9:00am - 8:00pm
+                </li>
+
+                <li class="footer__list-item">
+                  Weekends: 10:00am - 6:00pm
+                </li>
+              </ul>
+            </div>
+
+            <div class = "footer__column_content_social">
+              <h4 class ="footer__column-heading">Social media</h4>
+
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                    <img src="images/facebook_white.svg" alt="facebook_white" class="footer__social-icon">
+                    <a href="https://www.facebook.com/" class="footer__column-link">Facebook</a>
+                </li>
+
+                <li class="footer__list-item">
+                    <img src="images/instagram_white.svg" alt="instagram_white" class="footer__social-icon">
+                    <a href="https://www.instagram.com/?hl=en" class="footer__column-link">Instagram</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__copyright">
+          <p>&#169; 2023 Reynaldo Perez Pauli</p>
+        </div>
       </footer>
     </div>
-    <!-- Wrap the entire page content in a new div with the page class. Remember to add the closing tag -->
   </body>
 </html>
