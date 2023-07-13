@@ -439,11 +439,12 @@
 
 .footer__column_content_social{
   margin-left: 100px;
+  border: 1px solid #fff;
 }
 
 .footer__logo {
-  width: 80px;
-  height: 57px;
+  width: 57px;
+  height: 80px;
 }
 
 .footer__list {
@@ -476,6 +477,7 @@
   padding: 0px;
   margin: 0px;
   transition: 0.25s ease-in;
+  align-self: center;
 }
 
 .footer__column-link:hover {
@@ -485,6 +487,9 @@
 .footer__social-icon {
   width: 16px;
   height: 16px;
+  margin-right: 6px;
+  position: relative;
+  top: 2px;
 }
 
 .footer__copyright {
