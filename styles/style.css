@@ -2,7 +2,7 @@
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
-  font-family:  Helvetica, Arial, sans-serif;
+  font-family:  "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -16,13 +16,13 @@
   padding: 30px 80px 40px;
   position: relative;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 80px;
   align-items: flex-start;
 }
 
@@ -36,12 +36,11 @@
   display: flex;
   column-gap: 20px;
   list-style-type: none;
-  width: 532px;
   padding: 0;
 }
 
 .nav__link {
-  color: #000000;
+  color: #000;
   text-decoration: none;
   font-weight: bold;
   transition: 0.25s ease-in;
@@ -57,7 +56,7 @@
   font-size: 66px;
   line-height: 76px;
   font-weight: 500;
-  margin: 128px 0px 0px 0px;
+  margin: 128px 0 0 0;
 }
 
 .header__description {
@@ -68,7 +67,7 @@
 }
 
 .header__image {
-  z-index: 1;
+  z-index: -1;
   max-width: 636px;
   position: absolute;
   top: 135px;
@@ -273,9 +272,7 @@
 
 .staff__cards{
   max-width: 760px;
-  margin-top: 68px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 68px auto 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -289,7 +286,7 @@
   padding: 32px 40px 20px 32px;
   box-sizing: border-box;
   width: 360px;
-  height: 420px;
+  min-height: 420px;
   list-style-type: none;
   position: relative;
 }
@@ -297,6 +294,7 @@
 .card__content {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .card__title {
@@ -313,13 +311,10 @@
 }
 
 .card__footer {
-  margin: 0;
+  margin: auto 0 0;
   font-size: 14px;
   line-height: 20px;
   color: #838383;
-  position: absolute;
-  bottom: 20px;
-  width: 288px;
 }
 
 
@@ -420,8 +415,9 @@
 .footer {
   box-sizing: border-box;
   padding: 60px 102px 60px 80px;
-  background-color: #000;
+  background-color: #1f1f1f;
   color: #fff;
+  border-top: 1px solid #c1c1c1;
 }
 
 .footer__columns {
@@ -439,7 +435,6 @@
 
 .footer__column_content_social{
   margin-left: 100px;
-  border: 1px solid #fff;
 }
 
 .footer__logo {
@@ -477,7 +472,8 @@
   padding: 0px;
   margin: 0px;
   transition: 0.25s ease-in;
-  align-self: center;
+  display: flex;
+  align-items: center;
 }
 
 .footer__column-link:hover {
@@ -488,8 +484,6 @@
   width: 16px;
   height: 16px;
   margin-right: 6px;
-  position: relative;
-  top: 2px;
 }
 
 .footer__copyright {
